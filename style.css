@@ -13,18 +13,17 @@ body {
   line-height: 1.5;
 }
 
-.header {
+.__header {
   display: flex;
   align-items: center;
   z-index: 32;
-  padding: 16px 32px;
+  padding: 16px 20px;
   font-size: 14px;
   line-height: 1.5;
   color: #ffffffb3;
   background-color: #24292e;
   width: 100%;
   height: 62px;
-  justify-content: space-between;
 }
 .header-logo {
   fill: white;
@@ -121,14 +120,13 @@ nav ul li {
   margin-bottom: 20px;
 }
 
-.__header .mv-r {
-  margin-left: 480px;
-}
-
 .mr .mail-status {
   display: inline-block;
 }
 
+.nav-items {
+  flex-basis: 62%;
+}
 .img-lg::after {
   content: '😃';
   position: absolute;
@@ -387,12 +385,9 @@ a:hover {
 @media screen and (max-width: 991px) {
   html,
   body,
+  header,
   main {
     width: 100%;
-  }
-
-  .__header .mv-r {
-    margin-left: 0;
   }
 
   .header {
@@ -431,20 +426,13 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .__header .mv-r {
-    margin-left: 0;
-  }
-
-  .header {
+@media screen and (max-width: 1250px) {
+  html,
+  body,
+  header,
+  main {
     width: 100%;
   }
-
-  .header .__header {
-    width: auto;
-    display: flex;
-  }
-
   .img-lg img {
     margin-top: 10px;
     border-radius: 50%;
@@ -474,5 +462,9 @@ a:hover {
     align-items: center;
     margin-left: 0px;
     width: auto;
+  }
+
+  .nav-items {
+    flex-basis: 56%;
   }
 }
