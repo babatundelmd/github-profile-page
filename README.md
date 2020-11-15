@@ -3,7 +3,7 @@
 A Frontend Coding Challenge.
 
 #### It includes:
-- The responsiveness.
+- Responsiveness.
 - The profile picture and basic description of the account.
 - 20 repositories
 
