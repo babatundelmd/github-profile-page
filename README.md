@@ -1,6 +1,6 @@
 ### Github Profile Page
 
-A Frontend Coding Challenge.
+A Frontend Coding Challenge - using HTML, CSS and Plain JavaScript
 
 #### It includes:
 - Responsiveness.
