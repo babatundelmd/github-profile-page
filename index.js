@@ -5,7 +5,7 @@ async function onSubmit() {
       // Call the github API
         const req = await ( await fetch( url ) ).json();
         localStorage.setItem( 'userData', JSON.stringify( req ) )
-        window.location.href = 'index.html';
+        window.location.href = 'profile.html';
     }
 }
 
