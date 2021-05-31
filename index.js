@@ -1,6 +1,8 @@
 async function onSubmit() {
-    const userName = document.getElementById('userName').value;
-    if (userName) {
+  const userName = document.getElementById( 'userName' ).value;
+  let loader = `<div class="loader"></div>`;
+  if ( userName ) {
+    document.getElementById('login').innerHTML = loader;
       const url = `${config.URL}${userName}`;
       // Call the github API
         const req = await ( await fetch( url ) ).json();
